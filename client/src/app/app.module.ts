@@ -7,18 +7,22 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeroComponent } from './components/hero/hero.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
+import { ArticlesComponent } from './components/articles/articles.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HeroComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ArticlesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

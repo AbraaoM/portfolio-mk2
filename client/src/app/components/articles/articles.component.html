@@ -1,0 +1,16 @@
+<section class="container min-vh-100">
+  <h1 class="border-bottom border-2 border-black">ARTIGOS PUBLICADOS</h1>
+
+  <div class="row mx-lg-5 my-md-5">
+    <div *ngFor="let article of articles" class="col-12 col-md-6 col-lg-4">
+      <div class="card border-black border-2 my-md-3 m-3">
+        <img [src]="article.cover_image" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ article.title }}</h5>
+          <p class="card-text">{{ article.description }}</p>
+          <a [href]="article.url" class="btn btn-dark">Artigo completo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
