@@ -1,0 +1,38 @@
+.arrows-container
+  border: none
+  display: flex
+  position: relative
+  background: none
+
+  &:focus
+    outline: 0
+    background: none
+    box-shadow: none
+
+  &:hover
+    background: none
+    cursor: pointer
+
+  & .arrow
+    box-shadow: 2px 2px 0 0 black inset
+    padding: 18px
+    opacity: 0
+    position: absolute
+
+  & .arrow.down
+    transform: rotate(-135deg)
+
+  & .arrow-one.down
+    animation: arrow-movement-down 2s ease-in-out infinite
+
+@keyframes arrow-movement-down
+  0%
+    opacity: 0
+    top: 0
+
+  70%
+    opacity: 1
+
+  100%
+    opacity: 0
+    top: 30px
