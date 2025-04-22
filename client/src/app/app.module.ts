@@ -8,6 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeroComponent } from './components/hero/hero.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ArticlesComponent } from './components/articles/articles.component';
+import { BuildInPublicComponent } from './components/build-in-public/build-in-public.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     NavbarComponent,
     HeroComponent,
     AboutMeComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    BuildInPublicComponent
   ],
   imports: [
     BrowserModule,
