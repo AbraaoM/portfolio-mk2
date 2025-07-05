@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,14 +6,5 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./navbar.component.sass'],
 })
 export class NavbarComponent {
-  scrolledPercentage: number = 0;
-
-  @HostListener('window:scroll', ['$event'])
-  onScroll(event: Event) {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    const scrollHeight = document.documentElement.scrollHeight;
-    const clientHeight = document.documentElement.clientHeight;
-
-    this.scrolledPercentage = (scrollTop / (scrollHeight - clientHeight)) * 100;
-  }
+  isMenuCollapsed = true;
 }
