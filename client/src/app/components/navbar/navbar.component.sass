@@ -1,17 +1,19 @@
 .navbar
   padding: 10px 0
   transition: all 0.3s ease
+  z-index: 1030 // Garantir que fique acima de outros elementos
 
 .nav-link
   color: #000
   font-weight: 500
   margin: 0 10px
   transition: all 0.2s ease
+  cursor: pointer
 
   &:hover
     color: #333
     transform: translateY(-2px)
 
 .navbar-spacer
-  height: 70px
+  height: 70px // Ajuste conforme a altura do seu navbar
   width: 100%

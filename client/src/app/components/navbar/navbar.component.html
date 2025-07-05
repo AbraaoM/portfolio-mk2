@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-white border-bottom border-black border-3 fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#hero">
+    <a class="navbar-brand" (click)="scrollToSection('hero')" style="cursor: pointer;">
       <img
         src="../../../assets/images/Logo.svg"
         alt="Abraão Moreira"
@@ -15,16 +15,16 @@
     <div class="collapse navbar-collapse" [ngbCollapse]="isMenuCollapsed" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#hero" (click)="isMenuCollapsed = true">Início</a>
+          <a class="nav-link" (click)="scrollToSection('hero')" style="cursor: pointer;">Início</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about" (click)="isMenuCollapsed = true">Sobre Mim</a>
+          <a class="nav-link" (click)="scrollToSection('about')" style="cursor: pointer;">Sobre Mim</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#build" (click)="isMenuCollapsed = true">Build in Public</a>
+          <a class="nav-link" (click)="scrollToSection('build')" style="cursor: pointer;">Build in Public</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#articles" (click)="isMenuCollapsed = true">Artigos</a>
+          <a class="nav-link" (click)="scrollToSection('articles')" style="cursor: pointer;">Artigos</a>
         </li>
         <li class="nav-item">
           <a class="btn btn-dark btn-sm ms-lg-3" href="mailto:abraaol.moreira@mail.com">Contato</a>
