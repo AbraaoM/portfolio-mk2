@@ -1,27 +1,27 @@
-<section class="container inter-font">
-  <div class="d-flex vh-100 justify-content-center align-items-center">
-    <div class="text-center">
+<section class="container-fluid bg-white h-100">
+  <div class="row vh-100 align-items-center">
+    <div class="col-lg-10 col-xl-8 mx-auto text-center">
       <div class="mb-4">
         <img
           src="../../../assets/images/Logo.svg"
           alt="Abraão Moreira"
-          width="250"
+          width="280"
           class="img-fluid"
         />
       </div>
-      <h1 class="fs-1 text-black mb-3 anton-regular">Abraão Moreira</h1>
-      <div class="fs-2 text-black mb-4">
-        <span class="dynamic-text">{{currentText}}</span>
+      <h1 class="display-4 text-black mb-3 anton-regular">Abraão Moreira</h1>
+      <div class="fs-2 text-black mb-5">
+        <span>{{currentText}}</span>
       </div>
 
       <!-- Botão CTA -->
-      <div class="mb-4">
-        <button class="btn btn-dark btn-lg btn-cta" [routerLink]="['/contact']">
+      <div class="mb-5">
+        <button class="btn btn-dark btn-lg" [routerLink]="['/contact']">
           Vamos Conversar <i class="bi bi-arrow-right ms-2"></i>
         </button>
       </div>
 
-      <div class="fs-1 d-flex justify-content-center gap-3 mb-5">
+      <div class="fs-1 d-flex justify-content-center gap-4 mb-5">
         <a href="mailto:abraaol.moreira@mail.com" class="text-black">
           <i class="bi bi-envelope-fill"></i>
         </a>
@@ -36,12 +36,6 @@
         </a>
         <a href="https://x.com/abraaomoreira_" target="_blank" class="text-black">
           <i class="bi bi-twitter-x"></i>
-        </a>
-      </div>
-      <div class="d-flex justify-content-center p-5">
-        <a class="arrows-container" href="#about">
-          <div [ngClass]="'arrow arrow-one down'">
-          </div>
         </a>
       </div>
     </div>

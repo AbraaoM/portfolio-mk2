@@ -1,87 +1,21 @@
-.arrows-container
-  border: none
-  display: flex
-  position: relative
-  background: none
-
-  &:focus
-    outline: 0
-    background: none
-    box-shadow: none
-
-  &:hover
-    background: none
-    cursor: pointer
-
-  & .arrow
-    box-shadow: 2px 2px 0 0 black inset
-    padding: 18px
-    opacity: 0
-    position: absolute
-
-  & .arrow.down
-    transform: rotate(-135deg)
-
-  & .arrow-one.down
-    animation: arrow-movement-down 4s cubic-bezier(0.4, 0, 0.2, 1) infinite
-
-@keyframes arrow-movement-down
-  0%
-    opacity: 0
-    top: 0
-
-  15%
-    opacity: 1
-    top: 15px
-
-  30%
-    opacity: 0
-    top: 30px
-
-  100%
-    opacity: 0
-    top: 30px
-
-.static-text
-  display: inline-block
-  margin-right: 5px
-
-.dynamic-text
+// Mínimo SASS necessário para as animações do texto
+span
   display: inline-block
   position: relative
   min-width: 320px
-  height: 2.5em
-  overflow: hidden
-  animation: slideVertical 4s cubic-bezier(0.25, 0.1, 0.25, 1) infinite
-  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.1) 5%, black 25%, black 75%, rgba(0,0,0,0.1) 95%, transparent 100%)
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.1) 5%, black 25%, black 75%, rgba(0,0,0,0.1) 95%, transparent 100%)
-  padding: 0.7em 0
-  margin: -0.7em 0
-  box-shadow: inset 0 0 10px rgba(255,255,255,0.5)
-  text-align: center
+  animation: textFade 4s ease-in-out infinite
 
-@keyframes slideVertical
+@keyframes textFade
   0%, 10%
-    transform: translateY(-100%)
     opacity: 0
-    filter: blur(4px)
-
-  20%, 25%
-    transform: translateY(-10%)
-    opacity: 0.7
-    filter: blur(1px)
-
   30%, 70%
-    transform: translateY(0)
     opacity: 1
-    filter: blur(0)
-
-  75%, 80%
-    transform: translateY(10%)
-    opacity: 0.7
-    filter: blur(1px)
-
   90%, 100%
-    transform: translateY(100%)
     opacity: 0
-    filter: blur(4px)
+
+// Ajuste responsivo mínimo
+@media (max-width: 768px)
+  .display-4
+    font-size: 2.5rem
+  span
+    min-width: 260px
