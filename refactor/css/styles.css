@@ -558,11 +558,18 @@ footer {
 
 @media (max-width: 768px) {
     .navbar-custom {
-        padding: 8px 0;
+        padding: 12px 0;
+    }
+
+    .navbar-brand img {
+        width: 35px;
+        height: 35px;
     }
 
     .nav-link {
-        margin: 0 5px;
+        padding: 0.75rem 0.5rem !important;
+        margin: 0;
+        font-size: 0.95rem;
     }
 
     .nav-link::after {
@@ -570,48 +577,106 @@ footer {
     }
 
     .hero-section {
-        margin-top: 60px;
-        padding: 20px 0;
+        margin-top: 70px;
+        padding: 40px 20px;
+        min-height: 100vh;
+    }
+
+    .hero-logo img {
+        width: 220px !important;
     }
 
     .hero-section h1 {
-        font-size: 2rem;
-        margin-bottom: 15px;
+        font-size: 2.2rem;
+        margin-bottom: 20px;
     }
 
     .hero-section .fs-2 {
-        font-size: 1.3rem !important;
+        font-size: 1.25rem !important;
+        line-height: 1.4;
     }
 
     .hero-text {
-        min-height: 60px;
+        min-height: 70px;
+        margin-bottom: 30px;
+    }
+
+    .hero-section .btn-lg {
+        padding: 11px 35px;
+        font-size: 1rem;
     }
 
     .social-link {
-        width: 45px;
-        height: 45px;
+        width: 48px;
+        height: 48px;
+        font-size: 1.5rem;
+    }
+
+    .social-links {
+        gap: 1.5rem !important;
     }
 
     .about-section {
-        padding: 40px 0;
+        padding: 60px 20px;
     }
 
-    .about-section .col-lg-4,
+    .about-section .col-lg-4 {
+        padding: 0 !important;
+        margin-bottom: 30px;
+    }
+
     .about-section .col-lg-8 {
-        padding: 20px !important;
+        padding: 0 !important;
     }
 
     .about-section img {
-        margin-bottom: 20px;
+        max-width: 280px;
+        margin: 0 auto 20px;
+        display: block;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .build-section {
+        padding: 60px 20px;
     }
 
     .build-section .row {
         margin-left: 0 !important;
         margin-right: 0 !important;
+        gap: 20px;
+    }
+
+    .build-section .col-xl-8 {
+        padding: 0 !important;
+    }
+
+    .build-section .col-xl-4 {
+        padding: 0 !important;
     }
 
     .build-card {
-        margin-bottom: 20px;
+        margin-bottom: 0;
+    }
+
+    .build-card .card-body {
+        padding: 20px;
+    }
+
+    .build-card .btn {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+
+    .tech-card .card-body {
+        padding: 20px;
+    }
+
+    .articles-section {
+        padding: 60px 20px;
     }
 
     .articles-section .row {
@@ -623,102 +688,213 @@ footer {
         margin: 0;
     }
 
+    .article-card img {
+        height: 200px;
+    }
+
     section h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         border-width: 3px !important;
+        margin-bottom: 30px;
+        padding: 15px 0;
     }
 }
 
 @media (max-width: 480px) {
     .navbar-custom {
-        padding: 8px 0;
+        padding: 10px 0;
     }
 
     .navbar-brand {
         margin-right: auto;
     }
 
+    .navbar-brand img {
+        width: 32px;
+        height: 32px;
+    }
+
     .navbar-toggler {
         border-color: rgba(0, 0, 0, 0.1);
+        padding: 0.15rem 0.5rem;
+    }
+
+    .navbar-toggler-icon {
+        width: 1.3rem;
+        height: 1.3rem;
     }
 
     .nav-link {
-        padding: 0.5rem 0;
+        padding: 0.6rem 0 !important;
+        font-size: 0.9rem;
+    }
+
+    .btn-dark.btn-sm {
+        padding: 0.35rem 0.7rem;
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
     }
 
     .hero-section {
-        margin-top: 50px;
-        padding: 15px 0;
+        margin-top: 65px;
+        padding: 30px 15px;
+        min-height: auto;
     }
 
     .hero-logo img {
-        width: 200px !important;
+        width: 170px !important;
     }
 
     .hero-section h1 {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        font-weight: 700;
     }
 
     .hero-section .fs-2 {
         font-size: 0.95rem !important;
+        line-height: 1.3;
+        min-height: auto;
     }
 
-    .hero-section .btn {
-        padding: 10px 25px;
-        font-size: 0.95rem;
+    .hero-text {
+        min-height: auto;
+        margin-bottom: 20px;
     }
 
-    .hero-section .fs-1 {
-        font-size: 1.2rem !important;
+    .hero-section .btn-lg {
+        padding: 9px 20px;
+        font-size: 0.9rem;
     }
 
     .social-link {
-        width: 40px;
-        height: 40px;
+        width: 42px;
+        height: 42px;
+        font-size: 1.2rem;
     }
 
-    .social-link i {
-        font-size: 1rem;
+    .social-links {
+        gap: 1rem !important;
+    }
+
+    .about-section {
+        padding: 40px 15px;
+    }
+
+    .about-section img {
+        max-width: 240px;
     }
 
     .about-section p {
         font-size: 0.95rem;
+        line-height: 1.6;
     }
 
-    .build-section .card-body,
-    .articles-section .card-body {
+    .build-section {
+        padding: 40px 15px;
+    }
+
+    .build-section .row {
+        gap: 15px;
+    }
+
+    .build-card .card-body {
         padding: 15px;
     }
 
+    .build-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .build-card .lead {
+        font-size: 0.95rem;
+    }
+
+    .build-card .btn {
+        padding: 8px 15px;
+        font-size: 0.85rem;
+    }
+
+    .tech-card .card-body {
+        padding: 15px;
+    }
+
+    .tech-item {
+        padding: 8px !important;
+    }
+
     .tech-list .d-flex {
-        gap: 10px;
+        gap: 8px;
+    }
+
+    .articles-section {
+        padding: 40px 15px;
+    }
+
+    .article-card img {
+        height: 180px;
+    }
+
+    .article-card .card-body {
+        padding: 12px;
+    }
+
+    .article-card .card-title {
+        font-size: 0.95rem;
+        min-height: auto;
+    }
+
+    .article-card .card-text {
+        font-size: 0.85rem;
     }
 
     section h1 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        border-width: 2px !important;
+        margin-bottom: 20px;
         padding: 10px 0;
     }
 
     .card-header {
-        padding: 15px;
+        padding: 12px 15px;
+    }
+
+    .card-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .card-header h3 {
+        font-size: 1.1rem;
     }
 
     .modal-dialog {
-        margin: 10px;
+        margin: 15px;
+    }
+
+    .modal-content {
+        border-width: 3px;
     }
 
     footer {
-        padding: 25px 0;
+        padding: 25px 15px;
         font-size: 0.9rem;
     }
 
+    footer p {
+        margin-bottom: 15px;
+    }
+
     .footer-link {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .social-links-footer {
-        gap: 10px;
+        gap: 12px;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
