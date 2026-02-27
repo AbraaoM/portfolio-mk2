@@ -321,6 +321,7 @@ section h1 {
     height: 100%;
     overflow: hidden;
     animation: slideInUp 0.6s ease-out;
+    margin-bottom: 0;
 }
 
 .article-card:nth-child(2) {
@@ -619,7 +620,7 @@ footer {
     }
 
     .article-card {
-        margin: 15px 0;
+        margin: 0;
     }
 
     section h1 {
