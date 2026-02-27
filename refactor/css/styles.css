@@ -607,13 +607,16 @@ footer {
     }
 
     .social-link {
-        width: 48px;
-        height: 48px;
-        font-size: 1.5rem;
+        width: 52px;
+        height: 52px;
+        font-size: 1.6rem;
     }
 
     .social-links {
         gap: 1.5rem !important;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .about-section {
@@ -768,13 +771,17 @@ footer {
     }
 
     .social-link {
-        width: 42px;
-        height: 42px;
-        font-size: 1.2rem;
+        width: 58px;
+        height: 58px;
+        font-size: 1.5rem;
     }
 
     .social-links {
         gap: 1rem !important;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
     }
 
     .about-section {
