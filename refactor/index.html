@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abraão Moreira - Consultor de Tecnologia">
+    <meta name="author" content="Abraão Moreira">
+    <title>Abraão Moreira - Consultor de Tecnologia</title>
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#hero" onclick="smoothScroll('hero', event)">
+                <img src="../client/src/assets/images/Logo.svg" alt="Logo" width="40" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero" onclick="smoothScroll('hero', event)">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" onclick="smoothScroll('about', event)">Sobre Mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#build" onclick="smoothScroll('build', event)">Build in Public</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#articles" onclick="smoothScroll('articles', event)">Artigos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark btn-sm ms-lg-3" href="mailto:abraaol.moreira@mail.com">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-10 col-xl-8 mx-auto text-center">
+                    <div class="mb-4 hero-logo">
+                        <img src="../client/src/assets/images/Logo.svg" alt="Abraão Moreira" width="280" class="img-fluid">
+                    </div>
+                    <h1 class="display-4 text-black mb-3 anton-regular">Abraão Moreira</h1>
+                    <div class="fs-2 text-black mb-5 hero-text">
+                        <span id="animated-text">Tecnologia Simples. Valor Real para Seus Clientes.</span>
+                    </div>
+
+                    <div class="mb-5">
+                        <button class="btn btn-dark btn-lg" onclick="smoothScroll('about', event)">
+                            Vamos Conversar <i class="bi bi-arrow-right ms-2"></i>
+                        </button>
+                    </div>
+
+                    <div class="fs-2 d-flex justify-content-center gap-4 mb-5 social-links">
+                        <a href="mailto:abraaol.moreira@mail.com" title="Email" class="text-black text-decoration-none social-link">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/abraao-moreira/" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="text-black text-decoration-none social-link">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/AbraaoM" target="_blank" rel="noopener noreferrer" title="GitHub" class="text-black text-decoration-none social-link">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/abraaomoreira.dev/" target="_blank" rel="noopener noreferrer" title="Instagram" class="text-black text-decoration-none social-link">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://x.com/abraaomoreira_" target="_blank" rel="noopener noreferrer" title="X (Twitter)" class="text-black text-decoration-none social-link">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section inter-font">
+        <div class="container">
+            <h1 class="border-bottom border-4 border-black anton-regular mb-5">QUEM SOU EU</h1>
+            <div class="row justify-content-around align-items-center">
+                <div class="col-lg-4 p-5 d-flex justify-content-center align-items-center">
+                    <img class="rounded-5 p-2 img-fluid border border-3 border-black" 
+                         src="https://avatars.githubusercontent.com/u/49653939?v=4" 
+                         alt="Abraão Moreira"
+                         loading="lazy">
+                </div>
+                <div class="col-lg-8 p-lg-5 text-black about-text">
+                    <p class="fs-5">
+                        <strong>Olá! Sou Abraão Moreira, consultor de tecnologia</strong> apaixonado por transformar desafios em eficiência e resultados tangíveis para negócios e organizações.
+                        <br><br>
+                        Minha experiência como <strong>Analista de TI na Prefeitura de Pindamonhangaba</strong> me proporcionou um know-how único em desburocratização e aceleração de processos. Lá, apliquei essa visão para otimizar operações, como a notável redução do tempo de abertura de empresas de dias para apenas minutos, utilizando soluções estratégicas.
+                        <br><br>
+                        Com um sólido background como <strong>desenvolvedor fullstack</strong> (Angular, .NET, Python, PostgreSQL) e expertise na criação de ferramentas para análise de mercados financeiros (MQL4/MQL5), eu combino conhecimento técnico aprofundado com uma forte capacidade de identificar oportunidades e construir soluções tecnológicas práticas e sob medida que geram valor real.
+                        <br><br>
+                        <strong>Sou Bacharel em Ciência e Tecnologia pela Universidade Federal de São Paulo</strong>, o que fundamenta minha abordagem técnica e estratégica para cada projeto.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Build in Public Section -->
+    <section id="build" class="build-section inter-font">
+        <div class="container py-5">
+            <h1 class="border-bottom border-4 border-black anton-regular mb-5">BUILD IN PUBLIC</h1>
+
+            <div class="row mb-5">
+                <div class="col-xl-8">
+                    <div class="card border-4 border-black shadow-sm h-100 build-card">
+                        <div class="card-header bg-white text-black border-black border-4">
+                            <h2 class="mb-0">Baby Manual 👶</h2>
+                        </div>
+                        <div class="card-body text-black">
+                            <p class="lead">O Manual Completo para a história do seu bebê. Um sistema inteligente que centraliza toda a jornada do seu bebê: saúde, desenvolvimento e memórias afetivas em um único lugar seguro e organizado.</p>
+
+                            <h5 class="mt-4 border-bottom border-1 pb-2">Principais Funcionalidades:</h5>
+                            <ul class="list-unstyled features-list">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i> <span>Centralização de dados de saúde (vacinação, consultas, exames, medições)</span></li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i> <span>Preservação de memórias afetivas (desenhos, fotos, mensagens pessoais)</span></li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i> <span>Agente inteligente com acesso a artigos científicos e histórico personalizado</span></li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i> <span>Checklists inteligentes para cada etapa da parentalidade</span></li>
+                            </ul>
+
+                            <div class="mt-4 row">
+                                <a href="https://babymanual.abraaomoreira.dev/" target="_blank" rel="noopener noreferrer" class="btn btn-dark m-2 col-md-3 col-11">Demo Live <i class="bi bi-box-arrow-up-right"></i></a>
+                                <span class="badge bg-warning text-dark m-2 col-md-4 col-11 d-flex align-items-center justify-content-center">🎉 Em Desenvolvimento</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="card border-4 border-black shadow-sm h-100 my-2 my-xl-0 tech-card">
+                        <div class="card-header bg-white text-black border-black border-4">
+                            <h3 class="mb-0">Stack Tecnológica</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex flex-column gap-4 tech-list">
+                                <div class="d-flex align-items-center tech-item">
+                                    <div class="tech-icon me-3">
+                                        <i class="bi bi-code fs-1"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">React + Vite</h5>
+                                        <p class="text-muted small mb-0">Frontend framework</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center tech-item">
+                                    <div class="tech-icon me-3">
+                                        <i class="bi bi-type fs-1"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">TypeScript</h5>
+                                        <p class="text-muted small mb-0">Type-safe development</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center tech-item">
+                                    <div class="tech-icon me-3">
+                                        <i class="bi bi-server fs-1"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">Elysia.js</h5>
+                                        <p class="text-muted small mb-0">Backend framework</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center tech-item">
+                                    <div class="tech-icon me-3">
+                                        <i class="bi bi-database fs-1"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">PostgreSQL</h5>
+                                        <p class="text-muted small mb-0">Banco de dados</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="articles-section inter-font">
+        <div class="container py-5">
+            <h1 class="border-bottom border-4 border-black anton-regular mb-5">ÚLTIMOS ARTIGOS PUBLICADOS</h1>
+
+            <div class="row mx-lg-5 my-md-5" id="articles-container">
+                <div class="loading text-center py-5 w-100">
+                    <div class="spinner"></div>
+                    <p class="mt-3 text-muted">Carregando artigos...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border border-4 border-black">
+                <div class="modal-header bg-white border-black border-bottom border-4">
+                    <h5 class="modal-title anton-regular">Gerar Link de Pagamento</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="payment-form">
+                        <div class="mb-3">
+                            <label for="customer-email" class="form-label">Email do Cliente</label>
+                            <input type="email" class="form-control border-2" id="customer-email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="payment-amount" class="form-label">Valor (R$)</label>
+                            <input type="number" class="form-control border-2" id="payment-amount" step="0.01" min="0.01" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="payment-description" class="form-label">Descrição</label>
+                            <textarea class="form-control border-2" id="payment-description" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="payment-gateway" class="form-label">Gateway de Pagamento</label>
+                            <select class="form-select border-2" id="payment-gateway" required>
+                                <option value="">Selecione um gateway</option>
+                                <option value="stripe">Stripe</option>
+                                <option value="mercadopago">Mercado Pago</option>
+                                <option value="paypal">PayPal</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer bg-light border-black border-top border-4">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-dark" id="generate-payment-btn">Gerar Link</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white text-center py-4 inter-font">
+        <div class="container">
+            <p class="mb-2">&copy; 2024 Abraão Moreira. Todos os direitos reservados.</p>
+            <div class="social-links-footer">
+                <a href="https://www.linkedin.com/in/abraao-moreira/" target="_blank" rel="noopener noreferrer" class="text-white me-3 footer-link">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://github.com/AbraaoM" target="_blank" rel="noopener noreferrer" class="text-white me-3 footer-link">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.instagram.com/abraaomoreira.dev/" target="_blank" rel="noopener noreferrer" class="text-white me-3 footer-link">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://x.com/abraaomoreira_" target="_blank" rel="noopener noreferrer" class="text-white footer-link">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/payment.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
