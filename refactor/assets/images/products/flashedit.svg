@@ -1,0 +1,33 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="170" y1="90" x2="1430" y2="910" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EEF4FF" />
+      <stop offset="1" stop-color="#2563EB" />
+    </linearGradient>
+    <linearGradient id="screen" x1="360" y1="210" x2="1260" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" />
+      <stop offset="1" stop-color="#EAF1FF" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" rx="48" fill="url(#bg)" />
+  <circle cx="1260" cy="210" r="150" fill="#FFFFFF" fill-opacity="0.16" />
+  <circle cx="300" cy="180" r="120" fill="#000000" fill-opacity="0.08" />
+  <rect x="260" y="210" width="1080" height="580" rx="34" fill="#0B0F0E" fill-opacity="0.9" />
+  <rect x="285" y="235" width="1030" height="530" rx="26" fill="url(#screen)" />
+  <rect x="285" y="235" width="1030" height="72" rx="26" fill="#FFFFFF" />
+  <circle cx="332" cy="271" r="11" fill="#2563EB" />
+  <circle cx="368" cy="271" r="11" fill="#2563EB" fill-opacity="0.45" />
+  <circle cx="404" cy="271" r="11" fill="#2563EB" fill-opacity="0.25" />
+  <rect x="342" y="350" width="360" height="28" rx="14" fill="#0B0F0E" fill-opacity="0.9" />
+  <rect x="342" y="404" width="300" height="18" rx="9" fill="#0B0F0E" fill-opacity="0.16" />
+  <rect x="342" y="442" width="420" height="18" rx="9" fill="#0B0F0E" fill-opacity="0.14" />
+  <rect x="342" y="500" width="420" height="260" rx="28" fill="#2563EB" fill-opacity="0.08" stroke="#2563EB" stroke-width="6" />
+  <rect x="832" y="350" width="420" height="210" rx="28" fill="#2563EB" fill-opacity="0.12" stroke="#2563EB" stroke-width="6" />
+  <rect x="872" y="400" width="340" height="26" rx="13" fill="#0B0F0E" fill-opacity="0.14" />
+  <rect x="872" y="454" width="280" height="18" rx="9" fill="#0B0F0E" fill-opacity="0.14" />
+  <rect x="872" y="490" width="220" height="18" rx="9" fill="#0B0F0E" fill-opacity="0.14" />
+  <path d="M920 700L1010 560L1070 630L1168 490L1220 540" stroke="#2563EB" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M892 720L958 620L1012 660L1114 520L1182 570L1230 485" stroke="#000000" stroke-opacity="0.14" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="320" y="168" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="800">FlashEdit</text>
+  <text x="320" y="110" fill="#DCE8FF" font-family="Inter, Arial, sans-serif" font-size="24" letter-spacing="6">PRODUCT SHOWCASE</text>
+</svg>

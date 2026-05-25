@@ -1,0 +1,35 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="150" y1="70" x2="1460" y2="930" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F1FAF8" />
+      <stop offset="1" stop-color="#0F766E" />
+    </linearGradient>
+    <linearGradient id="card" x1="470" y1="220" x2="1160" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" />
+      <stop offset="1" stop-color="#E8FFFB" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" rx="48" fill="url(#bg)" />
+  <circle cx="260" cy="170" r="110" fill="#FFFFFF" fill-opacity="0.16" />
+  <circle cx="1340" cy="210" r="160" fill="#000000" fill-opacity="0.12" />
+  <circle cx="1220" cy="830" r="190" fill="#FFFFFF" fill-opacity="0.08" />
+  <rect x="260" y="210" width="1080" height="580" rx="34" fill="#0B0F0E" fill-opacity="0.9" />
+  <rect x="285" y="235" width="1030" height="530" rx="26" fill="url(#card)" />
+  <rect x="285" y="235" width="1030" height="72" rx="26" fill="#FFFFFF" />
+  <circle cx="332" cy="271" r="11" fill="#0F766E" />
+  <circle cx="368" cy="271" r="11" fill="#0F766E" fill-opacity="0.45" />
+  <circle cx="404" cy="271" r="11" fill="#0F766E" fill-opacity="0.25" />
+  <rect x="330" y="355" width="320" height="26" rx="13" fill="#0B0F0E" fill-opacity="0.9" />
+  <rect x="330" y="405" width="520" height="18" rx="9" fill="#0B0F0E" fill-opacity="0.18" />
+  <rect x="330" y="445" width="440" height="18" rx="9" fill="#0B0F0E" fill-opacity="0.14" />
+  <rect x="330" y="510" width="210" height="210" rx="28" fill="#0F766E" fill-opacity="0.14" stroke="#0F766E" stroke-width="6" />
+  <rect x="572" y="510" width="210" height="210" rx="28" fill="#0F766E" fill-opacity="0.09" stroke="#0F766E" stroke-width="6" />
+  <rect x="814" y="355" width="420" height="365" rx="28" fill="#0F766E" fill-opacity="0.09" stroke="#0B0F0E" stroke-opacity="0.12" stroke-width="4" />
+  <rect x="858" y="406" width="330" height="28" rx="14" fill="#0B0F0E" fill-opacity="0.12" />
+  <rect x="858" y="462" width="270" height="18" rx="9" fill="#0B0F0E" fill-opacity="0.14" />
+  <rect x="858" y="500" width="240" height="18" rx="9" fill="#0B0F0E" fill-opacity="0.14" />
+  <rect x="858" y="560" width="150" height="140" rx="20" fill="#0F766E" fill-opacity="0.18" />
+  <rect x="1020" y="560" width="150" height="140" rx="20" fill="#0F766E" fill-opacity="0.18" />
+  <text x="320" y="168" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="800">Baby Manual</text>
+  <text x="320" y="110" fill="#D1FAE5" font-family="Inter, Arial, sans-serif" font-size="24" letter-spacing="6">PRODUCT SHOWCASE</text>
+</svg>

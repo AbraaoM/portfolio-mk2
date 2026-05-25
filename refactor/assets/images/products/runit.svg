@@ -1,0 +1,33 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="160" y1="100" x2="1420" y2="920" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFFBF3" />
+      <stop offset="1" stop-color="#15803D" />
+    </linearGradient>
+    <linearGradient id="screen" x1="360" y1="210" x2="1260" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" />
+      <stop offset="1" stop-color="#EEF9F1" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" rx="48" fill="url(#bg)" />
+  <circle cx="1260" cy="170" r="165" fill="#FFFFFF" fill-opacity="0.16" />
+  <circle cx="360" cy="800" r="150" fill="#000000" fill-opacity="0.08" />
+  <rect x="260" y="210" width="1080" height="580" rx="34" fill="#0B0F0E" fill-opacity="0.9" />
+  <rect x="285" y="235" width="1030" height="530" rx="26" fill="url(#screen)" />
+  <rect x="285" y="235" width="1030" height="72" rx="26" fill="#FFFFFF" />
+  <circle cx="332" cy="271" r="11" fill="#15803D" />
+  <circle cx="368" cy="271" r="11" fill="#15803D" fill-opacity="0.45" />
+  <circle cx="404" cy="271" r="11" fill="#15803D" fill-opacity="0.25" />
+  <rect x="340" y="350" width="420" height="28" rx="14" fill="#0B0F0E" fill-opacity="0.9" />
+  <rect x="340" y="404" width="460" height="18" rx="9" fill="#0B0F0E" fill-opacity="0.16" />
+  <rect x="340" y="442" width="380" height="18" rx="9" fill="#0B0F0E" fill-opacity="0.14" />
+  <rect x="340" y="510" width="210" height="210" rx="28" fill="#15803D" fill-opacity="0.14" stroke="#15803D" stroke-width="6" />
+  <rect x="576" y="510" width="210" height="210" rx="28" fill="#15803D" fill-opacity="0.09" stroke="#15803D" stroke-width="6" />
+  <rect x="812" y="355" width="430" height="365" rx="28" fill="#15803D" fill-opacity="0.09" stroke="#0B0F0E" stroke-opacity="0.12" stroke-width="4" />
+  <path d="M884 562H968L934 665L1030 665L952 785L980 698H908L884 562Z" fill="#15803D" fill-opacity="0.9" />
+  <rect x="858" y="404" width="330" height="24" rx="12" fill="#0B0F0E" fill-opacity="0.14" />
+  <rect x="858" y="458" width="250" height="18" rx="9" fill="#0B0F0E" fill-opacity="0.14" />
+  <rect x="858" y="498" width="210" height="18" rx="9" fill="#0B0F0E" fill-opacity="0.14" />
+  <text x="320" y="168" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="800">Runit</text>
+  <text x="320" y="110" fill="#D7FBE4" font-family="Inter, Arial, sans-serif" font-size="24" letter-spacing="6">PRODUCT SHOWCASE</text>
+</svg>
