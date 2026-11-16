@@ -58,3 +58,11 @@ a.card:hover,.project:hover{border-color:var(--accent);transform:translateY(-2px
 .social a{color:var(--muted)}
 .foot{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}
 @media (max-width:860px){.nav nav{display:none}.lang{margin-left:auto}.grid2,.grid3{grid-template-columns:1fr}.about{grid-template-columns:1fr;gap:24px}.about img{width:160px;height:160px}.hero{padding:72px 0 56px}section{padding:56px 0}}
+.exp{list-style:none;border-left:1px solid var(--line);margin-top:20px}
+.exp li{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:0 0 22px 22px;position:relative}
+.exp li:before{content:"";position:absolute;left:-5px;top:8px;width:9px;height:9px;border-radius:50%;background:var(--accent)}
+.exp .when{color:var(--muted);font-size:.9rem;padding-top:2px}
+.exp h3{font-size:1.05rem;margin-bottom:2px}
+.exp p{color:var(--muted);font-size:.9rem}
+.langs{margin-top:8px}
+@media (max-width:860px){.exp li{grid-template-columns:1fr;gap:2px}}
