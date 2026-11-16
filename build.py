@@ -26,7 +26,7 @@ T = {
   "lang": "pt-BR", "other": "en", "other_label": "EN", "other_name": "English",
   "title": "Abraão Moreira | Desenvolvedor Full-Stack (React, Next.js, Node.js) e Automação",
   "desc": "Desenvolvedor full-stack: aplicações web em React, Next.js, Node.js e TypeScript, automação de processos e ferramentas MQL5 para MetaTrader 5.",
-  "nav_work": "Projetos", "nav_services": "Serviços", "nav_about": "Sobre", "nav_articles": "Artigos", "nav_contact": "Contato",
+  "nav_work": "Projetos", "nav_services": "Serviços", "nav_about": "Sobre", "nav_articles": "Artigos", "nav_contact": "Contato", "theme_label": "Alternar modo claro/escuro",
   "kicker": "Desenvolvedor full-stack · Automações e MQL5",
   "h1": "Tecnologia simples. Valor real para o seu trabalho.",
   "lead": "Construo sistemas web, integrações e automações que deixam o trabalho do dia a dia mais simples, de aplicações em Next.js e login único a ferramentas MQL5 para MetaTrader 5. Trabalho direto com o cliente, do primeiro requisito ao suporte em produção.",
@@ -73,7 +73,7 @@ T = {
   "lang": "en", "other": "pt", "other_label": "PT", "other_name": "Português",
   "title": "Abraão Moreira | Full-Stack Developer (React, Next.js, Node.js) & Automation",
   "desc": "Full-stack developer: web apps with React, Next.js, Node.js and TypeScript, process automation and MQL5 tools for MetaTrader 5.",
-  "nav_work": "Work", "nav_services": "Services", "nav_about": "About", "nav_articles": "Articles", "nav_contact": "Contact",
+  "nav_work": "Work", "nav_services": "Services", "nav_about": "About", "nav_articles": "Articles", "nav_contact": "Contact", "theme_label": "Toggle light/dark mode",
   "kicker": "Full-stack Developer · Process Automation · MQL5 / MetaTrader 5",
   "h1": "Simple technology. Real value for your work.",
   "lead": "I build web systems, integrations, and automations that make daily work simpler, from Next.js applications and single sign-on to MQL5 tools for MetaTrader 5. I work directly with the client, from the first requirement through production support.",
@@ -162,6 +162,7 @@ def page(l):
 <html lang="{t['lang']}">
 <head>
 <meta charset="UTF-8">
+<script>(function(){{try{{var t=localStorage.getItem('theme')}}catch(e){{}}if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.dataset.theme=t}})()</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{t['title']}</title>
 <meta name="description" content="{t['desc']}">
@@ -188,6 +189,7 @@ def page(l):
     <nav aria-label="Menu">
       <a href="#work">{t['nav_work']}</a><a href="#services">{t['nav_services']}</a><a href="#about">{t['nav_about']}</a><a href="#articles">{t['nav_articles']}</a><a href="#contact">{t['nav_contact']}</a>
     </nav>
+    <button class="theme" type="button" aria-label="{t['theme_label']}" title="{t['theme_label']}"><span class="moon" aria-hidden="true">☾</span><span class="sun" aria-hidden="true">☀</span></button>
     <a class="lang" href="{other_href}" hreflang="{T[t['other']]['lang']}" lang="{T[t['other']]['lang']}" data-lang="{t['other']}" title="{t['other_name']}"><span class="on">{'PT' if l=='pt' else 'EN'}</span> / {t['other_label']}</a>
   </div>
 </header>
