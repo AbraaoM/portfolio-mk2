@@ -1,4 +1,5 @@
-:root{--bg:#0b0d12;--panel:#12151c;--line:#232835;--fg:#e8eaf0;--muted:#9aa1b2;--accent:#5eead4;--accent2:#a78bfa;--r:14px}
+:root{--bg:#0b0d12;--panel:#12151c;--line:#232835;--fg:#e8eaf0;--muted:#a3aab9;--accent:#5eead4;--accent-text:#5eead4;--accent2:#c4b5fd;--nav:rgba(11,13,18,.85);--h1b:#c7d2fe;--logo:invert(1);--r:14px;color-scheme:dark}
+:root[data-theme=light]{--bg:#f7f8fa;--panel:#ffffff;--line:#d9dde5;--fg:#0f172a;--muted:#475569;--accent:#5eead4;--accent-text:#0f766e;--accent2:#6d28d9;--nav:rgba(247,248,250,.88);--h1b:#1e3a8a;--logo:none;color-scheme:light}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:72px}
 body{background:var(--bg);color:var(--fg);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
@@ -12,19 +13,19 @@ h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:12px}
 h2.mt{margin-top:64px}
 h3{font-size:1.35rem;margin-bottom:8px}
 .sub,.muted{color:var(--muted);margin-bottom:28px;max-width:720px}
-.nav{position:sticky;top:0;z-index:10;background:rgba(11,13,18,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{position:sticky;top:0;z-index:10;background:var(--nav);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav-in{display:flex;align-items:center;gap:24px;height:64px}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:Anton,Impact,sans-serif;font-size:1.15rem;letter-spacing:.02em}
-.brand img{filter:invert(1)}
+.brand img{filter:var(--logo)}
 .nav nav{display:flex;gap:22px;margin-left:auto}
 .nav nav a{text-decoration:none;color:var(--muted);font-size:.95rem}
 .nav nav a:hover{color:var(--fg)}
 .lang{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.85rem;text-decoration:none;color:var(--muted);white-space:nowrap}
-.lang .on{color:var(--accent);font-weight:600}
+.lang .on{color:var(--accent-text);font-weight:600}
 .lang:hover{border-color:var(--accent)}
 .hero{padding:110px 0 80px}
-.kicker{color:var(--accent);font-weight:500;margin-bottom:16px}
-.hero h1{font-size:clamp(2.6rem,7vw,5rem);max-width:900px;background:linear-gradient(90deg,var(--fg),#c7d2fe);-webkit-background-clip:text;background-clip:text;color:transparent}
+.kicker{color:var(--accent-text);font-weight:500;margin-bottom:16px}
+.hero h1{font-size:clamp(2.6rem,7vw,5rem);max-width:900px;background:linear-gradient(90deg,var(--fg),var(--h1b));-webkit-background-clip:text;background-clip:text;color:transparent}
 .lead{font-size:1.2rem;color:var(--muted);max-width:720px;margin:22px 0 34px}
 .ctas{display:flex;gap:12px;flex-wrap:wrap}
 .btn{display:inline-block;padding:12px 22px;border-radius:10px;background:var(--accent);color:#04201c;font-weight:600;text-decoration:none;border:1px solid var(--accent)}
@@ -42,11 +43,11 @@ a.card:hover,.project:hover{border-color:var(--accent);transform:translateY(-2px
 .tag{align-self:flex-start;font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent2);margin-bottom:10px}
 .project .stack{font-size:.85rem;margin:14px 0 18px}
 .project .stack span{color:var(--fg)}
-.link{color:var(--accent);font-weight:600;text-decoration:none;margin-top:auto}
+.link{color:var(--accent-text);font-weight:600;text-decoration:none;margin-top:auto}
 .mql .link{margin-top:14px}
 .side{flex-direction:row;gap:16px;align-items:flex-start}
-.side img{border-radius:10px;background:#fff;flex:none}
-.status{font-size:.75rem;color:var(--accent)}
+.side img{border-radius:10px;background:#fff;flex:none;border:1px solid var(--line)}
+.status{font-size:.75rem;color:var(--accent-text)}
 .about{display:grid;grid-template-columns:220px 1fr;gap:48px;align-items:center}
 .about img{border-radius:20px;border:1px solid var(--line)}
 .about p{color:var(--muted);margin-bottom:14px}
@@ -67,3 +68,8 @@ a.card:hover,.project:hover{border-color:var(--accent);transform:translateY(-2px
 .exp p{color:var(--muted);font-size:.9rem}
 .langs{margin-top:8px}
 @media (max-width:860px){.exp li{grid-template-columns:1fr;gap:2px}}
+.theme{background:none;border:1px solid var(--line);border-radius:999px;color:var(--fg);width:34px;height:30px;cursor:pointer;font-size:1rem;line-height:1;display:inline-flex;align-items:center;justify-content:center}
+.theme:hover{border-color:var(--accent)}
+.theme .sun{display:none}:root[data-theme=light] .theme .sun{display:inline}:root[data-theme=light] .theme .moon{display:none}
+.exp li:before{background:var(--accent-text)}
+@media (max-width:860px){.theme{margin-left:auto}.nav .lang{margin-left:0}}

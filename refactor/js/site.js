@@ -1,4 +1,8 @@
 (function(){
+  // Tema: segue o sistema até o visitante escolher; a escolha fica salva.
+  var root=document.documentElement,tb=document.querySelector('.theme');
+  if(tb)tb.addEventListener('click',function(){var n=root.dataset.theme==='light'?'dark':'light';root.dataset.theme=n;try{localStorage.setItem('theme',n)}catch(e){}});
+  try{matchMedia('(prefers-color-scheme: light)').addEventListener('change',function(e){if(!localStorage.getItem('theme'))root.dataset.theme=e.matches?'light':'dark'})}catch(e){}
   // Idioma: lembra a escolha; na primeira visita à raiz, sugere EN para navegadores fora do português.
   var lang=document.documentElement.lang.indexOf('pt')===0?'pt':'en';
   var sw=document.querySelector('.lang');
