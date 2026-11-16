@@ -1,416 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Abraão Moreira - Consultor de Tecnologia">
-    <meta name="author" content="Abraão Moreira">
-    <title>Abraão Moreira - Consultor de Tecnologia</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="assets/images/Logo.svg">
-    
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abraão Moreira | Desenvolvedor Full-Stack (React, Next.js, Node.js) e Automação</title>
+<meta name="description" content="Desenvolvedor full-stack: aplicações web em React, Next.js, Node.js e TypeScript, automação de processos e ferramentas MQL5 para MetaTrader 5.">
+<meta name="author" content="Abraão Moreira">
+<link rel="canonical" href="https://www.abraaomoreira.dev/">
+<link rel="alternate" hreflang="pt-BR" href="https://www.abraaomoreira.dev/">
+<link rel="alternate" hreflang="en" href="https://www.abraaomoreira.dev/en/">
+<link rel="alternate" hreflang="x-default" href="https://www.abraaomoreira.dev/en/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Abraão Moreira | Desenvolvedor Full-Stack (React, Next.js, Node.js) e Automação">
+<meta property="og:description" content="Desenvolvedor full-stack: aplicações web em React, Next.js, Node.js e TypeScript, automação de processos e ferramentas MQL5 para MetaTrader 5.">
+<meta property="og:url" content="https://www.abraaomoreira.dev/">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/49653939?v=4">
+<link rel="icon" type="image/svg+xml" href="assets/images/Logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Abraão Moreira","url":"https://www.abraaomoreira.dev/","jobTitle":"Full-Stack Developer","alumniOf":"Universidade Federal de São Paulo","sameAs":["https://github.com/AbraaoM","https://www.linkedin.com/in/abraao-moreira/","https://www.mql5.com/en/users/abraao.moreira/seller","https://dev.to/abraaom"]}</script>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white fixed-top navbar-custom">
-        <div class="container">
-            <a class="navbar-brand" href="#hero" onclick="smoothScroll('hero', event)">
-                <img src="assets/images/Logo.svg" alt="Logo" width="40" height="40">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#hero" onclick="smoothScroll('hero', event)">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about" onclick="smoothScroll('about', event)">Sobre Mim</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#build" onclick="smoothScroll('build', event)">Build in Public</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#products" onclick="smoothScroll('products', event)">Produtos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#articles" onclick="smoothScroll('articles', event)">Artigos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-dark btn-sm ms-lg-3" href="https://wa.me/5512991630587?text=Olá%20Abraão!%20Gostaria%20de%20conversar%20sobre%20como%20você%20pode%20ajudar%20meu%20negócio.">Contato</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top"><img src="assets/images/Logo.svg" alt="" width="32" height="32"><span>Abraão Moreira</span></a>
+    <nav aria-label="Menu">
+      <a href="#work">Projetos</a><a href="#services">Serviços</a><a href="#about">Sobre</a><a href="#articles">Artigos</a><a href="#contact">Contato</a>
     </nav>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-lg-10 col-xl-8 mx-auto text-center">
-                    <div class="mb-4 hero-logo">
-                        <img src="assets/images/Logo.svg" alt="Abraão Moreira" width="280" class="img-fluid">
-                    </div>
-                    <h1 class="display-4 text-black mb-3 anton-regular">Abraão Moreira</h1>
-                    <div class="fs-2 text-black mb-5 hero-text">
-                        <span id="animated-text">Tecnologia Simples. Valor Real para Seus Clientes.</span>
-                    </div>
-
-                    <div class="mb-5">
-                        <a href="https://wa.me/5512991630587?text=Olá%20Abraão!%20Gostaria%20de%20conversar%20sobre%20como%20você%20pode%20ajudar%20meu%20negócio." target="_blank" rel="noopener noreferrer" class="btn btn-dark btn-lg">
-                            Vamos Conversar <i class="bi bi-arrow-right ms-2"></i>
-                        </a>
-                    </div>
-
-                    <div class="fs-2 d-flex justify-content-center gap-4 mb-5 social-links">
-                        <a href="mailto:abraaol.moreira@mail.com" title="Email" class="text-black text-decoration-none social-link">
-                            <i class="bi bi-envelope-fill"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/abraao-moreira/" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="text-black text-decoration-none social-link">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/AbraaoM" target="_blank" rel="noopener noreferrer" title="GitHub" class="text-black text-decoration-none social-link">
-                            <i class="bi bi-github"></i>
-                        </a>
-                        <a href="https://www.instagram.com/abraaomoreira.dev/" target="_blank" rel="noopener noreferrer" title="Instagram" class="text-black text-decoration-none social-link">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        <a href="https://x.com/abraaomoreira_" target="_blank" rel="noopener noreferrer" title="X (Twitter)" class="text-black text-decoration-none social-link">
-                            <i class="bi bi-twitter-x"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section inter-font">
-        <div class="container">
-            <h1 class="border-bottom border-4 border-black anton-regular mb-5">QUEM SOU EU</h1>
-            <div class="row justify-content-around align-items-center">
-                <div class="col-lg-4 p-5 d-flex justify-content-center align-items-center">
-                    <img class="rounded-5 p-2 img-fluid border border-3 border-black" 
-                         src="https://avatars.githubusercontent.com/u/49653939?v=4" 
-                         alt="Abraão Moreira"
-                         loading="lazy">
-                </div>
-                <div class="col-lg-8 p-lg-5 text-black about-text">
-                    <p class="fs-5">
-                        <strong>Olá! Sou Abraão Moreira, consultor de tecnologia</strong> apaixonado por transformar desafios em eficiência e resultados tangíveis para negócios e organizações.
-                        <br><br>
-                        Minha experiência como <strong>Analista de TI na Prefeitura de Pindamonhangaba</strong> me proporcionou um know-how único em desburocratização e aceleração de processos. Lá, apliquei essa visão para otimizar operações, como a notável redução do tempo de abertura de empresas de dias para apenas minutos, utilizando soluções estratégicas.
-                        <br><br>
-                        Com um sólido background como <strong>desenvolvedor fullstack</strong> (Angular, .NET, Python, PostgreSQL) e expertise na criação de ferramentas para análise de mercados financeiros (MQL4/MQL5), eu combino conhecimento técnico aprofundado com uma forte capacidade de identificar oportunidades e construir soluções tecnológicas práticas e sob medida que geram valor real.
-                        <br><br>
-                        <strong>Sou Bacharel em Ciência e Tecnologia pela Universidade Federal de São Paulo</strong>, o que fundamenta minha abordagem técnica e estratégica para cada projeto.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Build in Public Section -->
-    <section id="build" class="build-section inter-font">
-        <div class="container py-5">
-            <h1 class="border-bottom border-4 border-black anton-regular mb-5">BUILD IN PUBLIC</h1>
-
-            <div class="row mb-5">
-                <div class="col-xl-8">
-                    <div class="card border-4 border-black shadow-sm h-100 build-card">
-                        <div class="card-header bg-white text-black border-black border-4">
-                            <h2 class="mb-0">Baby Manual 👶</h2>
-                        </div>
-                        <div class="card-body text-black">
-                            <p class="lead">O Manual Completo para a história do seu bebê. Um sistema inteligente que centraliza toda a jornada do seu bebê: saúde, desenvolvimento e memórias afetivas em um único lugar seguro e organizado.</p>
-
-                            <h5 class="mt-4 border-bottom border-1 pb-2">Principais Funcionalidades:</h5>
-                            <ul class="list-unstyled features-list">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i> <span>Centralização de dados de saúde (vacinação, consultas, exames, medições)</span></li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i> <span>Preservação de memórias afetivas (desenhos, fotos, mensagens pessoais)</span></li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i> <span>Agente inteligente com acesso a artigos científicos e histórico personalizado</span></li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i> <span>Checklists inteligentes para cada etapa da parentalidade</span></li>
-                            </ul>
-
-                            <div class="mt-4 row">
-                                <a href="https://babymanual.abraaomoreira.dev/" target="_blank" rel="noopener noreferrer" class="btn btn-dark m-2 col-md-3 col-11">Demo Live <i class="bi bi-box-arrow-up-right"></i></a>
-                                <span class="badge bg-warning text-dark m-2 col-md-4 col-11 d-flex align-items-center justify-content-center">🎉 Em Desenvolvimento</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-4">
-                    <div class="card border-4 border-black shadow-sm h-100 my-2 my-xl-0 tech-card">
-                        <div class="card-header bg-white text-black border-black border-4">
-                            <h3 class="mb-0">Stack Tecnológica</h3>
-                        </div>
-                        <div class="card-body">
-                            <div class="d-flex flex-column gap-4 tech-list">
-                                <div class="d-flex align-items-center tech-item">
-                                    <div class="tech-icon me-3">
-                                        <i class="bi bi-code fs-1"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="mb-0">React + Vite</h5>
-                                        <p class="text-muted small mb-0">Frontend framework</p>
-                                    </div>
-                                </div>
-
-                                <div class="d-flex align-items-center tech-item">
-                                    <div class="tech-icon me-3">
-                                        <i class="bi bi-type fs-1"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="mb-0">TypeScript</h5>
-                                        <p class="text-muted small mb-0">Type-safe development</p>
-                                    </div>
-                                </div>
-
-                                <div class="d-flex align-items-center tech-item">
-                                    <div class="tech-icon me-3">
-                                        <i class="bi bi-server fs-1"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="mb-0">Elysia.js</h5>
-                                        <p class="text-muted small mb-0">Backend framework</p>
-                                    </div>
-                                </div>
-
-                                <div class="d-flex align-items-center tech-item">
-                                    <div class="tech-icon me-3">
-                                        <i class="bi bi-database fs-1"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="mb-0">PostgreSQL</h5>
-                                        <p class="text-muted small mb-0">Banco de dados</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section id="products" class="products-section inter-font">
-        <div class="container py-5">
-            <div class="products-header mb-5">
-                <span class="products-kicker">Produtos desenvolvidos</span>
-                <h1 class="border-bottom border-4 border-black anton-regular mb-3">PROJETOS COM IDENTIDADE PRÓPRIA</h1>
-                <p class="products-intro mb-0">
-                    Quatro produtos desenvolvidos por mim, com propostas diferentes, mas sempre com o mesmo foco:
-                    clareza, utilidade e uma experiência visual forte sem perder a simplicidade.
-                </p>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-12" id="products-grid">
-                    <article class="product-card product-card--teal">
-                        <div class="product-visual">
-                            <img src="assets/images/products/babymanual.svg" alt="Baby Manual" loading="lazy">
-                            <span class="product-status">Em desenvolvimento</span>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-meta">
-                                <span class="product-index">01</span>
-                                <span class="product-tag">Jornada do bebê em um só lugar</span>
-                            </div>
-                            <h2 class="product-title">Baby Manual</h2>
-                            <p class="product-description">
-                                Um sistema para centralizar saúde, desenvolvimento e memórias afetivas, tornando a rotina
-                                mais organizada e a história do bebê mais fácil de acompanhar.
-                            </p>
-                            <ul class="product-list">
-                                <li>Saúde, vacinação e acompanhamento do crescimento</li>
-                                <li>Memórias organizadas com fotos, desenhos e mensagens</li>
-                                <li>Interface segura, limpa e pronta para evoluir</li>
-                            </ul>
-                            <a class="btn btn-dark product-link" href="https://babymanual.abraaomoreira.dev/" target="_blank" rel="noopener noreferrer">
-                                Ver projeto <i class="bi bi-box-arrow-up-right ms-2"></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="product-card product-card--orange product-card--reverse">
-                        <div class="product-visual">
-                            <img src="assets/images/products/t-fox.svg" alt="T-Fox" loading="lazy">
-                            <span class="product-status">Produto ativo</span>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-meta">
-                                <span class="product-index">02</span>
-                                <span class="product-tag">Velocidade e precisão operacional</span>
-                            </div>
-                            <h2 class="product-title">T-Fox</h2>
-                            <p class="product-description">
-                                Uma experiência pensada para resolver tarefas com menos atrito, combinando navegação rápida,
-                                interface objetiva e um visual que comunica movimento.
-                            </p>
-                            <ul class="product-list">
-                                <li>Fluxos diretos para execução sem distrações</li>
-                                <li>Interface enxuta com foco em resultado</li>
-                                <li>Experiência pensada para produtividade</li>
-                            </ul>
-                            <a class="btn btn-dark product-link" href="https://t-fox.abraaomoreira.dev/" target="_blank" rel="noopener noreferrer">
-                                Ver projeto <i class="bi bi-box-arrow-up-right ms-2"></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="product-card product-card--blue">
-                        <div class="product-visual">
-                            <img src="assets/images/products/flashedit.svg" alt="FlashEdit" loading="lazy">
-                            <span class="product-status">Produto ativo</span>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-meta">
-                                <span class="product-index">03</span>
-                                <span class="product-tag">Edição rápida, sem ruído</span>
-                            </div>
-                            <h2 class="product-title">FlashEdit</h2>
-                            <p class="product-description">
-                                Um editor criado para reduzir o atrito entre abrir, ajustar e publicar, com foco em conteúdo,
-                                legibilidade e uma interface leve.
-                            </p>
-                            <ul class="product-list">
-                                <li>Edição objetiva para tarefas do dia a dia</li>
-                                <li>Fluxo simples e visual limpo</li>
-                                <li>Estrutura pronta para decisões rápidas</li>
-                            </ul>
-                            <a class="btn btn-dark product-link" href="https://flashedit.abraaomoreira.dev/" target="_blank" rel="noopener noreferrer">
-                                Ver projeto <i class="bi bi-box-arrow-up-right ms-2"></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="product-card product-card--green product-card--reverse">
-                        <div class="product-visual">
-                            <img src="assets/images/products/runit.svg" alt="Runit" loading="lazy">
-                            <span class="product-status">Produto ativo</span>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-meta">
-                                <span class="product-index">04</span>
-                                <span class="product-tag">Execução com consistência</span>
-                            </div>
-                            <h2 class="product-title">Runit</h2>
-                            <p class="product-description">
-                                Uma solução para acompanhar tarefas e progressos com clareza, linguagem visual forte e
-                                uma estrutura simples de navegar.
-                            </p>
-                            <ul class="product-list">
-                                <li>Leitura rápida e acompanhamento prático</li>
-                                <li>Visual direto para manter o foco</li>
-                                <li>Produto com presença e simplicidade</li>
-                            </ul>
-                            <a class="btn btn-dark product-link" href="https://runit.abraaomoreira.dev/" target="_blank" rel="noopener noreferrer">
-                                Ver projeto <i class="bi bi-box-arrow-up-right ms-2"></i>
-                            </a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Articles Section -->
-    <section id="articles" class="articles-section inter-font">
-        <div class="container py-5">
-            <h1 class="border-bottom border-4 border-black anton-regular mb-5">ÚLTIMOS ARTIGOS PUBLICADOS</h1>
-
-            <div class="row g-4 mt-3" id="articles-container">
-                <div class="loading text-center py-5 w-100">
-                    <div class="spinner"></div>
-                    <p class="mt-3 text-muted">Carregando artigos...</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Payment Modal -->
-    <div id="payment-modal" class="modal fade" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content border border-4 border-black">
-                <div class="modal-header bg-white border-black border-bottom border-4">
-                    <h5 class="modal-title anton-regular">Gerar Link de Pagamento</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="payment-form">
-                        <div class="mb-3">
-                            <label for="customer-email" class="form-label">Email do Cliente</label>
-                            <input type="email" class="form-control border-2" id="customer-email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="payment-amount" class="form-label">Valor (R$)</label>
-                            <input type="number" class="form-control border-2" id="payment-amount" step="0.01" min="0.01" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="payment-description" class="form-label">Descrição</label>
-                            <textarea class="form-control border-2" id="payment-description" rows="3"></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label for="payment-gateway" class="form-label">Gateway de Pagamento</label>
-                            <select class="form-select border-2" id="payment-gateway" required>
-                                <option value="">Selecione um gateway</option>
-                                <option value="stripe">Stripe</option>
-                                <option value="mercadopago">Mercado Pago</option>
-                                <option value="paypal">PayPal</option>
-                            </select>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer bg-light border-black border-top border-4">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-dark" id="generate-payment-btn">Gerar Link</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-black text-white text-center py-4 inter-font">
-        <div class="container">
-            <p class="mb-2">&copy; 2026 Abraão Moreira. Todos os direitos reservados.</p>
-            <div class="social-links-footer">
-                <a href="https://www.linkedin.com/in/abraao-moreira/" target="_blank" rel="noopener noreferrer" class="text-white me-3 footer-link">
-                    <i class="bi bi-linkedin"></i>
-                </a>
-                <a href="https://github.com/AbraaoM" target="_blank" rel="noopener noreferrer" class="text-white me-3 footer-link">
-                    <i class="bi bi-github"></i>
-                </a>
-                <a href="https://www.instagram.com/abraaomoreira.dev/" target="_blank" rel="noopener noreferrer" class="text-white me-3 footer-link">
-                    <i class="bi bi-instagram"></i>
-                </a>
-                <a href="https://x.com/abraaomoreira_" target="_blank" rel="noopener noreferrer" class="text-white footer-link">
-                    <i class="bi bi-twitter-x"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Custom JS -->
-    <script src="js/payment.js"></script>
-    <script src="js/main.js"></script>
+    <a class="lang" href="en/" hreflang="en" lang="en" data-lang="en" title="English"><span class="on">PT</span> / EN</a>
+  </div>
+</header>
+<main id="top">
+<section class="hero wrap">
+  <p class="kicker">Desenvolvedor full-stack · Pindamonhangaba, SP, Brasil</p>
+  <h1>Software simples que resolve problemas reais.</h1>
+  <p class="lead">Construo aplicações web de ponta a ponta com React, Next.js, Node.js e TypeScript, automatizo processos e desenvolvo ferramentas MQL5 para MetaTrader 5.</p>
+  <div class="ctas"><a class="btn" href="#work">Ver projetos</a><a class="btn ghost" href="#contact">Falar comigo</a></div>
+  <ul class="chips"><li>React</li><li>Next.js</li><li>Node.js</li><li>TypeScript</li><li>PostgreSQL</li><li>MQL5</li></ul>
+</section>
+<section id="services" class="wrap">
+  <h2>O que eu faço</h2>
+  <div class="grid3">
+    <article class="card"><h3>Aplicações web</h3><p>Do banco de dados à interface: SaaS, painéis administrativos, sistemas multiempresa e sites, com React, Next.js, Node.js, TypeScript e PostgreSQL.</p></article>
+    <article class="card"><h3>Automação de processos</h3><p>Integrações, bots e ferramentas internas que tiram trabalho manual da rotina e reduzem erros.</p></article>
+    <article class="card"><h3>MQL5 / MetaTrader 5</h3><p>Expert Advisors, indicadores, painéis e bibliotecas em MQL5, incluindo a biblioteca open source mql-simplify.</p></article>
+  </div>
+</section>
+<section id="work" class="wrap">
+  <h2>Projetos em destaque</h2>
+  <p class="sub">Produtos que desenvolvi na SIMPLIFY, minha software house. Os links abrem versões de demonstração, com dados fictícios.</p>
+  <div class="grid2">
+      <article class="card project">
+        <span class="tag">CMS multi-tenant</span>
+        <h3>Edila</h3>
+        <p>Gerenciador de conteúdo para prefeituras, câmaras e autarquias: páginas e notícias, biblioteca de mídia, fluxo editorial com revisão, histórico de versões, papéis de usuário e auditoria.</p>
+        <p class="stack"><span>Stack:</span> Next.js · React · TypeScript · Tailwind · PostgreSQL (Neon) · Vercel</p>
+        <a class="link" href="https://simplifyedila.vercel.app" target="_blank" rel="noopener noreferrer">Abrir demonstração <span aria-hidden="true">↗</span></a>
+      </article>
+      <article class="card project">
+        <span class="tag">Prestação de contas</span>
+        <h3>Ateste</h3>
+        <p>Monta e confere a prestação de contas do terceiro setor no padrão JSON Fase V do TCESP (AUDESP), validando o arquivo contra o schema e as regras do manual antes do envio.</p>
+        <p class="stack"><span>Stack:</span> Next.js · TypeScript · JSON Schema (Ajv) · Vitest · Vercel</p>
+        <a class="link" href="https://simplify-ateste.vercel.app" target="_blank" rel="noopener noreferrer">Abrir demonstração <span aria-hidden="true">↗</span></a>
+      </article>
+      <article class="card project">
+        <span class="tag">SaaS de agendamento</span>
+        <h3>Barbearias</h3>
+        <p>Agendamento online para barbearias: página pública da casa, escolha de serviço, barbeiro e horário, link para cancelar ou remarcar e painel da equipe.</p>
+        <p class="stack"><span>Stack:</span> TanStack Start · React · Better Auth · PostgreSQL (Neon) · Vercel</p>
+        <a class="link" href="https://barbearia.abraaomoreira.dev" target="_blank" rel="noopener noreferrer">Abrir demonstração <span aria-hidden="true">↗</span></a>
+      </article>
+      <article class="card project">
+        <span class="tag">Site institucional</span>
+        <h3>Clarear</h3>
+        <p>Site institucional da Clarear, marca da SIMPLIFY para tecnologia na gestão pública. Página estática, rápida e responsiva.</p>
+        <p class="stack"><span>Stack:</span> HTML · Tailwind CSS · Netlify</p>
+        <a class="link" href="https://clareargov.com.br" target="_blank" rel="noopener noreferrer">Visitar site <span aria-hidden="true">↗</span></a>
+      </article>
+  </div>
+  <h2 class="mt">MQL5 e open source</h2>
+  <p class="sub">Publico bibliotecas e ferramentas para MetaTrader 5 e mantenho meu código no GitHub.</p>
+  <div class="grid3">
+      <a class="card mql" href="https://github.com/AbraaoM/mql-simplify" target="_blank" rel="noopener noreferrer"><h3>mql-simplify</h3><p>Biblioteca open source em MQL5 para simplificar o desenvolvimento de Expert Advisors.</p><span class="link">Abrir ↗</span></a>
+      <a class="card mql" href="https://www.mql5.com/en/users/abraao.moreira/seller" target="_blank" rel="noopener noreferrer"><h3>Produtos no MQL5 Market</h3><p>Ferramentas para MetaTrader 5 publicadas no meu perfil de vendedor no MQL5.</p><span class="link">Abrir ↗</span></a>
+      <a class="card mql" href="https://github.com/AbraaoM" target="_blank" rel="noopener noreferrer"><h3>GitHub</h3><p>Repositórios públicos com projetos web, MQL5, Python e automação.</p><span class="link">Abrir ↗</span></a>
+  </div>
+  <h2 class="mt">Projetos pessoais</h2>
+  <div class="grid2">
+      <a class="card side" href="https://babymanual.abraaomoreira.dev" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/products/babymanual.svg" alt="" loading="lazy" width="56" height="56">
+        <div><h3>Baby Manual</h3><p>Saúde, desenvolvimento e memórias do bebê em um só lugar.</p><span class="status">Em desenvolvimento</span></div>
+      </a>
+      <a class="card side" href="https://t-fox.abraaomoreira.dev" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/products/t-fox.svg" alt="" loading="lazy" width="56" height="56">
+        <div><h3>T-Fox</h3><p>Interface rápida e objetiva para tarefas do dia a dia.</p><span class="status">No ar</span></div>
+      </a>
+      <a class="card side" href="https://flashedit.abraaomoreira.dev" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/products/flashedit.svg" alt="" loading="lazy" width="56" height="56">
+        <div><h3>FlashEdit</h3><p>Editor leve para ajustar e publicar sem atrito.</p><span class="status">No ar</span></div>
+      </a>
+      <a class="card side" href="https://runit.abraaomoreira.dev" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/products/runit.svg" alt="" loading="lazy" width="56" height="56">
+        <div><h3>Runit</h3><p>Acompanhamento de tarefas e progresso com clareza.</p><span class="status">No ar</span></div>
+      </a>
+  </div>
+</section>
+<section id="about" class="wrap about">
+  <img src="https://avatars.githubusercontent.com/u/49653939?v=4" alt="Abraão Moreira" width="220" height="220" loading="lazy">
+  <div><h2>Sobre mim</h2><p>Sou Abraão Moreira, desenvolvedor full-stack e Bacharel em Ciência e Tecnologia pela Universidade Federal de São Paulo (Unifesp).</p><p>Trabalho como Analista de TI na Prefeitura de Pindamonhangaba, onde atuo na desburocratização e na aceleração de processos. Antes de React e Node, trabalhei com Angular, .NET, Python e PostgreSQL, e desenvolvo ferramentas para mercado financeiro em MQL4/MQL5.</p><p>Gosto de construir ferramentas: entender o problema, desenhar a solução mais simples que funciona e entregar código que dá para manter.</p></div>
+</section>
+<section id="articles" class="wrap">
+  <h2>Artigos</h2>
+  <div id="articles-list" class="grid3" data-err="Não foi possível carregar os artigos agora."><p class="muted">Carregando artigos...</p></div>
+  <p><a class="link" href="https://dev.to/abraaom" target="_blank" rel="noopener noreferrer">Ver todos no DEV ↗</a></p>
+</section>
+<section id="contact" class="wrap contact">
+  <h2>Vamos conversar?</h2>
+  <p>Conte o que você precisa construir. Respondo com uma proposta de escopo fechado.</p>
+  <div class="ctas"><a class="btn" href="mailto:abraaol.moreira@mail.com">abraaol.moreira@mail.com</a><a class="btn ghost" href="https://wa.me/5512991630587?text=Ol%C3%A1%20Abra%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener noreferrer">WhatsApp</a></div>
+  <p class="social"><a href="https://www.linkedin.com/in/abraao-moreira/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://github.com/AbraaoM" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://www.mql5.com/en/users/abraao.moreira/seller" target="_blank" rel="noopener noreferrer">MQL5</a> · <a href="https://dev.to/abraaom" target="_blank" rel="noopener noreferrer">DEV</a> · <a href="https://x.com/abraaomoreira_" target="_blank" rel="noopener noreferrer">X</a> · <a href="https://www.instagram.com/abraaomoreira.dev/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+</section>
+</main>
+<footer class="wrap foot">© 2026 Abraão Moreira.</footer>
+<script src="js/site.js" defer></script>
 </body>
 </html>
