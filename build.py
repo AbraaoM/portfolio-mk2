@@ -4,8 +4,8 @@ import html, pathlib, sys
 
 ROOT = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else "refactor")
 SITE = "https://www.abraaomoreira.dev"
-WA = "https://wa.me/5512991630587"
-EMAIL = "abraaol.moreira@mail.com"
+WA = "https://wa.me/5512981660131"
+EMAIL = "contato@abraaomoreira.dev"
 
 PROJECTS = [
   # key, url, kind
@@ -27,9 +27,9 @@ T = {
   "title": "Abraão Moreira | Desenvolvedor Full-Stack (React, Next.js, Node.js) e Automação",
   "desc": "Desenvolvedor full-stack: aplicações web em React, Next.js, Node.js e TypeScript, automação de processos e ferramentas MQL5 para MetaTrader 5.",
   "nav_work": "Projetos", "nav_services": "Serviços", "nav_about": "Sobre", "nav_articles": "Artigos", "nav_contact": "Contato",
-  "kicker": "Desenvolvedor full-stack · Pindamonhangaba, SP, Brasil",
-  "h1": "Software simples que resolve problemas reais.",
-  "lead": "Construo aplicações web de ponta a ponta com React, Next.js, Node.js e TypeScript, automatizo processos e desenvolvo ferramentas MQL5 para MetaTrader 5.",
+  "kicker": "Desenvolvedor full-stack · Automações e MQL5",
+  "h1": "Tecnologia simples. Valor real para o seu trabalho.",
+  "lead": "Construo sistemas web, integrações e automações que deixam o trabalho do dia a dia mais simples, de aplicações em Next.js e login único a ferramentas MQL5 para MetaTrader 5. Trabalho direto com o cliente, do primeiro requisito ao suporte em produção.",
   "cta1": "Ver projetos", "cta2": "Falar comigo",
   "services_h": "O que eu faço",
   "s1_h": "Aplicações web", "s1_p": "Do banco de dados à interface: SaaS, painéis administrativos, sistemas multiempresa e sites, com React, Next.js, Node.js, TypeScript e PostgreSQL.",
@@ -59,9 +59,10 @@ T = {
   "flashedit_p": "Editor leve para ajustar e publicar sem atrito.", "flashedit_s": "No ar",
   "runit_p": "Acompanhamento de tarefas e progresso com clareza.", "runit_s": "No ar",
   "about_h": "Sobre mim",
-  "about_p1": "Sou Abraão Moreira, desenvolvedor full-stack e Bacharel em Ciência e Tecnologia pela Universidade Federal de São Paulo (Unifesp).",
-  "about_p2": "Trabalho como Analista de TI na Prefeitura de Pindamonhangaba, onde atuo na desburocratização e na aceleração de processos. Antes de React e Node, trabalhei com Angular, .NET, Python e PostgreSQL, e desenvolvo ferramentas para mercado financeiro em MQL4/MQL5.",
-  "about_p3": "Gosto de construir ferramentas: entender o problema, desenhar a solução mais simples que funciona e entregar código que dá para manter.",
+  "about_p1": "Sou o Abraão Moreira, desenvolvedor full-stack em Pindamonhangaba, Brasil (remoto, UTC-3). Há mais de cinco anos construo sistemas web, integrações e automações que tiram atrito do dia a dia.",
+  "about_p2": "Hoje atuo no governo municipal como analista de TI e desenvolvedor, liderando projetos e integrações: migrei sistemas legados para Next.js, implantei login único com Keycloak e Active Directory e coordeno o trabalho com vários fornecedores. Os sistemas novos saem com testes automatizados, e também oriento quatro estagiários.",
+  "about_p3": "Desde 2020 desenvolvo automações e ferramentas MQL4 e MQL5 para clientes do mercado financeiro. Antes, construí ERP e sistemas de gestão, uma interface de alto tráfego e software para o setor público na SNPS Group, na TIVIT e no Grupo Embras. Sou bacharel em Ciência e Tecnologia pela UNIFESP.",
+  "exp_h": "Experiência", "langs": "Idiomas: português (nativo), inglês intermediário (leitura técnica), espanhol básico.", "now": "atual",
   "articles_h": "Artigos", "articles_loading": "Carregando artigos...", "articles_err": "Não foi possível carregar os artigos agora.", "articles_more": "Ver todos no DEV",
   "contact_h": "Vamos conversar?",
   "contact_p": "Conte o que você precisa construir. Respondo com uma proposta de escopo fechado.",
@@ -73,9 +74,9 @@ T = {
   "title": "Abraão Moreira | Full-Stack Developer (React, Next.js, Node.js) & Automation",
   "desc": "Full-stack developer: web apps with React, Next.js, Node.js and TypeScript, process automation and MQL5 tools for MetaTrader 5.",
   "nav_work": "Work", "nav_services": "Services", "nav_about": "About", "nav_articles": "Articles", "nav_contact": "Contact",
-  "kicker": "Full-stack developer · Pindamonhangaba, SP, Brazil",
-  "h1": "Simple software that solves real problems.",
-  "lead": "I build end-to-end web applications with React, Next.js, Node.js and TypeScript, automate business processes, and develop MQL5 tools for MetaTrader 5.",
+  "kicker": "Full-stack Developer · Process Automation · MQL5 / MetaTrader 5",
+  "h1": "Simple technology. Real value for your work.",
+  "lead": "I build web systems, integrations, and automations that make daily work simpler, from Next.js applications and single sign-on to MQL5 tools for MetaTrader 5. I work directly with the client, from the first requirement through production support.",
   "cta1": "See my work", "cta2": "Get in touch",
   "services_h": "What I do",
   "s1_h": "Web applications", "s1_p": "From database to UI: SaaS products, admin dashboards, multi-tenant systems and websites, using React, Next.js, Node.js, TypeScript and PostgreSQL.",
@@ -105,9 +106,10 @@ T = {
   "flashedit_p": "Lightweight editor to tweak and publish without friction.", "flashedit_s": "Live",
   "runit_p": "Clear tracking of tasks and progress.", "runit_s": "Live",
   "about_h": "About me",
-  "about_p1": "I'm Abraão Moreira, a full-stack developer with a Bachelor's degree in Science and Technology from the Federal University of São Paulo (Unifesp).",
-  "about_p2": "I work as an IT Analyst at the City of Pindamonhangaba, focused on cutting red tape and speeding up processes. Before React and Node, I worked with Angular, .NET, Python and PostgreSQL, and I build financial-market tools in MQL4/MQL5.",
-  "about_p3": "I like building tools: understand the problem, design the simplest solution that works, and ship code that stays maintainable.",
+  "about_p1": "I'm Abraão Moreira, a full-stack developer in Pindamonhangaba, Brazil (remote, UTC-3). For more than five years I have built web systems, integrations, and automations that remove friction from everyday work.",
+  "about_p2": "Today I work in municipal government as an IT analyst and software developer, leading projects and integrations: I have migrated legacy systems to Next.js, implemented single sign-on with Keycloak and Active Directory, and coordinated work with several vendors. New systems ship with automated tests, and I mentor four interns.",
+  "about_p3": "Since 2020 I have developed MQL4 and MQL5 automations and decision-support tools for trading clients. Earlier I built ERP and management systems, a high-traffic front end, and public-sector software at SNPS Group, TIVIT, and Grupo Embras. I hold a B.Sc. in Science and Technology from UNIFESP.",
+  "exp_h": "Experience", "langs": "Languages: Portuguese (native), English (intermediate, technical reading), Spanish (basic).", "now": "present",
   "articles_h": "Articles", "articles_loading": "Loading articles...", "articles_err": "Couldn't load articles right now.", "articles_more": "See all on DEV",
   "contact_h": "Let's talk",
   "contact_p": "Tell me what you need to build. I'll reply with a fixed-scope proposal.",
@@ -115,6 +117,15 @@ T = {
   "footer": "© 2026 Abraão Moreira.",
  },
 }
+EXP = [
+ ("Analista de TI / Desenvolvedor · Governo municipal", "IT Analyst / Software Developer · Municipal government", "07/2024", None, "Next.js · Keycloak · OIDC/SSO · Active Directory · Grafana"),
+ ("Desenvolvedor MQL (freelancer)", "MQL Developer (freelance)", "07/2020", None, "MQL4 · MQL5 · Python · AWS EC2 · MySQL"),
+ ("Desenvolvedor full-stack · SNPS Group", "Full-stack Developer · SNPS Group", "03/2023", "07/2024", "Angular · TypeScript · .NET (C#) · SQL Server · RabbitMQ"),
+ ("Desenvolvedor full-stack · TIVIT", "Full-stack Developer · TIVIT", "03/2022", "03/2023", "Angular · TypeScript · .NET (C#) · MySQL"),
+ ("Front-end · Privacy", "Front-end Developer · Privacy", "11/2021", "03/2022", "Angular · RxJS"),
+ ("Desenvolvedor de sistemas · Grupo Embras", "Systems Developer · Grupo Embras", "08/2021", "11/2021", "Ruby on Rails · PostgreSQL · Docker"),
+ ("Front-end · CodeLab Unifesp", "Front-end Developer · CodeLab Unifesp", "01/2021", "11/2021", "React"),
+]
 STACKS = {"edila": "Next.js · React · TypeScript · Tailwind · PostgreSQL (Neon) · Vercel",
           "ateste": "Next.js · TypeScript · JSON Schema (Ajv) · Vitest · Vercel",
           "barber": "TanStack Start · React · Better Auth · PostgreSQL (Neon) · Vercel",
@@ -145,6 +156,8 @@ def page(l):
         ("mql1", "https://github.com/AbraaoM/mql-simplify"),
         ("mql2", "https://www.mql5.com/en/users/abraao.moreira/seller"),
         ("mql3", "https://github.com/AbraaoM")])
+    exp = "".join(f"""
+    <li><span class="when">{a} – {b or t['now']}</span><div><h3>{html.escape(pt if l=='pt' else en)}</h3><p>{html.escape(st)}</p></div></li>""" for pt, en, a, b, st in EXP)
     return f"""<!DOCTYPE html>
 <html lang="{t['lang']}">
 <head>
@@ -166,7 +179,7 @@ def page(l):
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{base}css/site.css">
-<script type="application/ld+json">{{"@context":"https://schema.org","@type":"Person","name":"Abraão Moreira","url":"{SITE}/","jobTitle":"Full-Stack Developer","alumniOf":"Universidade Federal de São Paulo","sameAs":["https://github.com/AbraaoM","https://www.linkedin.com/in/abraao-moreira/","https://www.mql5.com/en/users/abraao.moreira/seller","https://dev.to/abraaom"]}}</script>
+<script type="application/ld+json">{{"@context":"https://schema.org","@type":"Person","name":"Abraão Moreira","url":"{SITE}/","jobTitle":"Full-stack Developer","email":"mailto:contato@abraaomoreira.dev","alumniOf":"Universidade Federal de São Paulo","sameAs":["https://github.com/AbraaoM","https://www.linkedin.com/in/abraao-moreira/","https://www.mql5.com/en/users/abraao.moreira/seller","https://dev.to/abraaom"]}}</script>
 </head>
 <body>
 <header class="nav">
@@ -210,6 +223,12 @@ def page(l):
 <section id="about" class="wrap about">
   <img src="https://avatars.githubusercontent.com/u/49653939?v=4" alt="Abraão Moreira" width="220" height="220" loading="lazy">
   <div><h2>{t['about_h']}</h2><p>{t['about_p1']}</p><p>{t['about_p2']}</p><p>{t['about_p3']}</p></div>
+</section>
+<section id="experience" class="wrap">
+  <h2>{t['exp_h']}</h2>
+  <ol class="exp">{exp}
+  </ol>
+  <p class="muted langs">{t['langs']}</p>
 </section>
 <section id="articles" class="wrap">
   <h2>{t['articles_h']}</h2>
